@@ -1,3 +1,4 @@
+// using Internal;
 using System;
 
 namespace Polymorphism
@@ -5,29 +6,28 @@ namespace Polymorphism
 
 	class Animal 
 	{
-	
-		private string _name = default!;
-		public void setName(string name)
-		{
-			_name = name;
-		}
+		public string Name {get; set;} = default!;
 
-		public string getName()
+		public virtual void Barking(String barkingSound)
 		{
-			return _name;
+			Console.WriteLine(barkingSound);
 		}
 	}
 
 	class Dog : Animal
 	{
-		public void bark()
-		{
-			Console.WriteLine("Hong Hong");
-		}
 
 		public void bite()
 		{
-			Console.WriteLine("The Dog is biting.");
+			Console.WriteLine($"Status: {Name} is biting."); 
+		}
+	}
+
+	class Cat : Animal 
+	{
+		public void bark()
+		{
+			Console.WriteLine("Meow Meow");
 		}
 	}
 }
