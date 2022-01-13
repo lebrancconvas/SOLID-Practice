@@ -15,7 +15,8 @@ namespace Program
 			};
 
 			Human noah = (Human)char01; 
-			Console.WriteLine($"Status\nName: {noah.CharacterName}\nHP: {noah.HP}\nATK: {noah.ATK}\nDEF: {noah.DEF}"); 
+			Console.WriteLine($"Status\nName: {noah.CharacterName}\nHP: {noah.HP}\nATK: {noah.ATK}\nDEF: {noah.DEF}\n"); 
+			noah.speaking($"{noah.CharacterName}: Hi, New Player. I'm Noah.");
 		} 
 	}
 }

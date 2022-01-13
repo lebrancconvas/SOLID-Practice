@@ -12,7 +12,10 @@ namespace MMOCharacter
 
 	class Human : Character
 	{
-		
+		public void speaking(string sentence)
+		{
+			Console.WriteLine(sentence);
+		}
 	}
 
 	class Beast : Character
@@ -32,6 +35,6 @@ namespace MMOCharacter
 
 	class Being : Character
 	{
-		
+
 	}
 }
