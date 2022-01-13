@@ -1,4 +1,4 @@
-﻿using MMOGame;
+﻿using MMOCharacter;
 
 namespace Program
 {
@@ -9,12 +9,13 @@ namespace Program
 			Character char01 = new Human()
 			{
 				CharacterName = "Noah",
+				HP = 7000,
 				ATK = 200,
 				DEF = 100
 			};
 
 			Human noah = (Human)char01; 
-			Console.WriteLine($"Status\nName: {noah.CharacterName}\nATK: {noah.ATK}\nDEF: {noah.DEF}"); 
+			Console.WriteLine($"Status\nName: {noah.CharacterName}\nHP: {noah.HP}\nATK: {noah.ATK}\nDEF: {noah.DEF}"); 
 		} 
 	}
 }
